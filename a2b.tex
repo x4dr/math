@@ -1,82 +1,33 @@
-a_{n-1}= -a_{n} * \displaystyle\sum_{k=1}^{n} {z_k}
-
-IA: n=1
-a_{0} = -a_{1} * z_{1}
-
-IS: n = n+1
-a_{n} = (-a_{n+1}) * \displaystyle\sum_{k=1}^{n+1} {z_k}
-a_{n} = (-a_{n+1}) * (k_{n+1} + \displaystyle\sum_{k=1}^{n} {z_k})
-a_{n} =((-a_{n+1}) * k_{n+1}) + (-a_{n+1} * \displaystyle\sum_{k=1}^{n} {z_k}) | a_{n-1} = a_{n}+k_{n}
-a_{n} = a_{n} + (-a_{n+1} * \displaystyle\sum_{k=1}^{n} {z_k})		| -a_{n}
-IV2
-0 = -a_{n+1} * \displaystyle\sum_{k=1}^{n} {z_k}
-
-IA2 n=1
--a_{2} * z_{1} = 0
-
-IS2 n => n+1
-
-0 = -a_{n+2} * \displaystyle\sum_{k=1}^{n+1} {z_k}
-0 = (-a_{n+2} * \displaystyle\sum_{k=1}^{n} {z_k})+(-a_{n+2} * z_{n+1}) | + a_{n+2}*z_{n+1}
-
-a_{n+2}*z_{n+1} = -a_{n+2} * \displaystyle\sum_{k=1}^{n} {z_k}    | : a_{n+2}
-z_{n+1} = -1*\displaystyle\sum_{k=1}^{n} {z_k}
-
-
-
-
-
--5+3x+2x²= f(x)
-z:{   -2.5, 1}
-a:{-5   ,3, 2}
-
-a_{n}* -z_{n} = a_{n-1}
-a_{2} = 2
-z_{2} = 1
-
-2*-1 = -2
-
-a_{1} = 3
-z_{1} = -2.5
+\( \displaystyle\sum_{k=0}^{6} {a_k\cdot x^k} \in \mathbb{R}  \)
+ \\
+ \\
+\(p(x) = 164 + a_{1} \cdot x + a_{2} \cdot x^2 + ... + 2 \cdot x^6\)\\
+\(\forall x \in \mathbb{R} \implies p(x) > 0 \) \\
+\(z_{1}=i\)\\
+\(p(z_{1..6})=0 \)\\
+\\\(z \notin \mathbb{R}\) \\ Beweis:\\
+\(164 = -a_{1}  \cdot (i) \implies  \)\\
+\(a_{1} = -(-164i) = 164i\)\\
+\(164i = -a_{2}  \cdot (i + z_{2})\)\\
+\(a_{5} = -2  \cdot (i +z_{2}+z_{3}+z_{4}+z_{5}+z_{6})\)\\
+und so weiter für alle z\\
+ \\
+Behauptung\\
+\(\forall x,y \in \{1,.. ,6\} \land x \neq y \implies (|z_{x}| > 3 \implies |z_{y}| \leq 3 )\) \\
+wenn es ein z (Nullstelle) gibt dessen Betrag größer ist als 3, gibt es kein weiteres \(\implies\)
+höchstens ein |z| > 3\\
+ \\
+\(164 = (-1)^6  \cdot 2  \cdot \displaystyle\prod_{k=1}^{6} {z_{k}} \in \mathbb{R}\)\\
+\(164 = 2  \cdot i  \cdot z_{2}\cdot  z_{3}\cdot  z_{4}\cdot  z_{5}\cdot  z_{6}\)\\
+wenn \(|z_{2}| > 3 \) ist\\
+\((164i < -a_{2}  \cdot (i + 3))\)\\
+\(82 < i  \cdot  3  \cdot z_{3} \cdot z_{4} \cdot z_{5} \cdot z_{6}  \)\\
+muss \(|z_{3,..,6}|\) jeweils \(\leq\) 3 sein\\
+ \\
+\(\implies 82 < 3 \cdot 12 \)  \\
+\(82 < 36\)\\
+WIDERSPRUCH  \(\implies\) es muss mindestens zwei z mit \(z > 3\) geben\\
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-b) p(x) = SUM_{k=0;6}(a_{k}x^k) € |R
-
-
-p(x) = 164 + a_{1}*x + a_{2}*x^2 + ... + 2*x^6
-p(x) > 0 | x € |R
-z_{1}=i
-p(z_{1..6})=0 
-
-164 = -a_{1} * (i) =>  
-a_{1} = -(-164i) = 164i
-164i = -a_{2} * (i + z_{2})
-a_{5} = -2 * (i +z_{2}+z_{3}+z_{4}+z_{5}+z_{6})
-
-Behauptung
-|z_{x}| > 3 ==> |z_{y}| <= 3 | wenn es eine Nst gibt deren betrag größer ist als 3, gibt es keine weitere deren betrag größer als 3 ist ==> höchstens eine |NST| > 3
-
-164 = (-1)^6 *2 * MUL_{k=1;6}z_{k}
-164 = 2 * i * z_{2} z_{3} z_{4} z_{5} z_{6}
-wenn z_{2} > 3 ist
-\(164i < -a_{2} * (i + 3)\)
-82 = i *  4 * z_{3} z_{4} z_{5} z_{6}  
-muss | z_{3..6} | jeweils <= 3 sein
-
-82 = 4*12 (bzw äquidistant) 
-WIDERSPRUCH => es muss mindestens 2 geben
-
-
+\item~\\
+\(p(x)=164-0x+162x^2-50x^3-0x^4-50x^5+2x^6\)
