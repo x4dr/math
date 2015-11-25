@@ -1,0 +1,5 @@
+while true
+do
+ yes x | pdflatex u6.tex
+ sleep 5s
+done

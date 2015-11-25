@@ -1,0 +1,51 @@
+\documentclass{article} 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel} 
+\usepackage{verbatim}
+\usepackage{a4wide}
+\usepackage{todonotes}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\newtheorem{lemma}{Lemma}
+\usepackage{tikz} 
+\usepackage{qtree} 
+\usepackage{algpseudocode}
+\usepackage{listings}
+\lstset{literate= {Ö}{{ \"O}}1 {Ä}{{ \"A}}1 {Ü}{{ \"U}}1
+{ß}{{ \ss}}2 {ü}{{ \"u}}1 {ä}{{ \"a}}1 {ö}{{ \"o}}1 {°}{{\(^\circ\)}}1}
+\usepackage{algpseudocode}
+\usetikzlibrary{shapes} 
+\tikzset{dots/.style={dash
+pattern = on 1pt off 2pt}} 
+\newcommand{\handout}[5]{ \begin{center}
+    {\rule[1mm]{15cm}{0.1mm}\\\vbox{ \hbox to 5.78in { \textbf{#1} (\today) \hfill #2 } \vspace{4mm}
+  \hbox to 5.78in { {\Large \hfill #3  \hfill} } \vspace{2mm} \hbox to 5.78in {
+    \emph{#4 \hfill #5} } } } \end{center} \rule[4mm]{15cm}{0.2mm} \vspace*{4mm}}
+
+    \newcommand{\zettel}[1]{ \handout{Analysis}{}{\underline{#1}}{Robert Schultze}{Antje Goldau} }
+
+  \lstdefinelanguage{RAM}{ keywords={GOTO, JZ, JLZ, LGZ,
+  END,LOOP,FILL,COUNT,EINSERENDE}, sensitive=false }
+
+\newcommand{\equates}{\mathrel{\widehat{=}}}
+\newcommand{\m}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\Rightarrowm}{\(\Rightarrow\)}
+\newcommand{\ra}{\rightarrow}
+\begin{document}
+\zettel{Übungsblatt 6}
+
+\begin{enumerate}[label= Aufgabe \arabic*)]
+\item ~\\ \input{a1} 
+\item ~\\ \input{a2} 
+\item ~\\ \input{a3}
+\item ~\\ \input{a4}
+
+\end{enumerate}
+
+
+\end{document}

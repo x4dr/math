@@ -1,6 +1,6 @@
 \( \displaystyle\sum_{k=0}^{6} {a_k\cdot x^k} \in \mathbb{R}  \)
- \\
- \\
+\\
+\\
 \(p(x) = 164 + a_{1} \cdot x + a_{2} \cdot x^2 + ... + 2 \cdot x^6\)\\
 \(\forall x \in \mathbb{R} \implies p(x) > 0 \) \\
 \(z_{1}=i\)\\
@@ -11,23 +11,32 @@
 \(164i = -a_{2}  \cdot (i + z_{2})\)\\
 \(a_{5} = -2  \cdot (i +z_{2}+z_{3}+z_{4}+z_{5}+z_{6})\)\\
 und so weiter für alle z\\
- \\
+\\
 Behauptung\\
 \(\forall x,y \in \{1,.. ,6\} \land x \neq y \implies (|z_{x}| > 3 \implies |z_{y}| \leq 3 )\) \\
 wenn es ein z (Nullstelle) gibt dessen Betrag größer ist als 3, gibt es kein weiteres \(\implies\)
 höchstens ein |z| > 3\\
- \\
+\\
 \(164 = (-1)^6  \cdot 2  \cdot \displaystyle\prod_{k=1}^{6} {z_{k}} \in \mathbb{R}\)\\
 \(164 = 2  \cdot i  \cdot z_{2}\cdot  z_{3}\cdot  z_{4}\cdot  z_{5}\cdot  z_{6}\)\\
 wenn \(|z_{2}| > 3 \) ist\\
 \((164i < -a_{2}  \cdot (i + 3))\)\\
 \(82 < i  \cdot  3  \cdot z_{3} \cdot z_{4} \cdot z_{5} \cdot z_{6}  \)\\
 muss \(|z_{3,..,6}|\) jeweils \(\leq\) 3 sein\\
- \\
+\\
 \(\implies 82 < 3 \cdot 12 \)  \\
 \(82 < 36\)\\
 WIDERSPRUCH  \(\implies\) es muss mindestens zwei z mit \(z > 3\) geben\\
 
 
 \item~\\
-\(p(x)=164-0x+162x^2-50x^3-0x^4-50x^5+2x^6\)
+
+Aufgabenstellung \(\implies\) \\
+\(p(x)=164+a_{1}x+a_{2}x^2+a_{3}x^3+a_{4}x^4+a_{5}x^5+2x^6\) \\
+\(p(z)= 0\)\\
+\(z_1 = i \\ \implies\) finde \(a_{1..5}\) so, dass \\
+\(\forall x,y \in z \implies (| x | > 3 \implies | y | \leq z)  \)\\
+Schritt 1: i als Nullstelle sicherstellen, zB mit \(p(x)=164+162x^2+2x^6\)\\
+Schritt 2: Nullstelle mit Betrag \(> 3\) zb mit \(+ 50x^5\)\\
+Schritt 3: Effekt von \(50x^5\) ausgleichen (bei i) mit \(+ 50x^3\), damit i weiterhin Nullstelle ist\\
+\(\implies p(x)=164+0x+162x^2-50x^3-0x^4-50x^5+2x^6\)

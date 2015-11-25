@@ -1,0 +1,17 @@
+\((a_n)_{_{n\in \mathbb{N}}}\) ist beschränkt. \\
+Daraus folgt dass für \( b_n = min\{a_0,a_1, ... ,a_n\}\) gilt, dass \(b_n \leq b_{n-1}\) für \(  n \geq 1\) woraus
+sich direkt die Konvergenz folgern lässt: Der Wert für \(b_n\) bleibt konstant, wenn \(a_n \geq b_{n-1}\) und
+fällt im anderen Fall.\qed\\
+
+Durch die Definition \(c_n = inf\{a_{n},a_{n+1},a_{n+2},a_{n+3},...\}\), erkennt man, dass sich \(c_n\) für große n
+dem selben Wert annähert wie \(a_n\), da jeweils die ersten n Folgenglieder ausgelassen werden. Wenn \(c_n = a_n\)
+ist \(c_{n+1}\geq c_n\) und wenn \(c_n \neq a_n\) ist \(c_{n+1} = c_n\). Da a (und somit auch c, durch die
+ selbe obere Schranke) beschränkt ist, lässt sich Konvergenz folgern.\qed\\
+
+lim\(_{n\rightarrow \infty}b_n \leq \) lim\(_{n\rightarrow \infty}c_n \), da\\
+lim\(_{n\rightarrow \infty}b_n = min(a)\) und \\
+lim\(_{n\rightarrow \infty}c_n = \) lim\(_{n\rightarrow \infty}a_n \) falls a konvergiert, ansonsten\\
+lim\(_{n\rightarrow \infty}c_n = \) niedrigster Häufungspunkt von a,  da\\
+\(\forall n \in \mathbb{N} \ \exists m \in \mathbb{N} : m>n \implies c_n \leq a_m, \ a_n \geq  min(a) \implies
+b_m \geq c_n\). \qed
+
